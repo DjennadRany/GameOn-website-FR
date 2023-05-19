@@ -84,7 +84,7 @@
               <span class="error" id="errorequantity"></span>
             </div>
             <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
-            <div class="formData" id="formData">
+            <div class="formData" id="local" name="loca">
               <input class="checkbox-input" type="radio" id="location1" name="location" value="New York" />
               <label class="checkbox-label" for="location1">
                 <span class="checkbox-icon"></span>
@@ -117,9 +117,10 @@
               <label class="checkbox2-label" for="checkbox1" required>
                 <span class="checkbox-icon"></span>
                 J'ai lu et accepté les conditions d'utilisation.
-                <span class="error" id="errorchek"></span>
+                
               </label>
-              <br>
+             <span class="error" id="errorchek"></span>
+            
               <input class="checkbox-input" type="checkbox" id="checkbox2" />
               <label class="checkbox2-label" for="checkbox2">
                 <span class="checkbox-icon"></span>
@@ -135,7 +136,7 @@
         <div id="mod-val">
           <p>Merci ! Votre réservation a été reçue.</p>
 
-          <button class="btn-signup" value="fermer" >Fermer</button>
+          <button class="fin btn-signup" value="fermer" id="ferme" >Fermer</button>
         </div>
         </div>
       </div>
