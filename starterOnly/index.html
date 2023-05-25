@@ -16,15 +16,16 @@
       <img alt="logo" src="Logo.png" width="auto" height="auto" />
     </div>
     <div class="main-navbar">
-
-      <a href="#" class="active"><span>Accueil</span></a>
+<a class="icon" id="burger" >
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="blokmen">
+      <a href="#" class="active" s><span>Accueil</span></a>
       <a href="#"><span>Détails de l'évènement</span></a>
       <a href="#"><span>À propos</span></a>
       <a href="#"><span>Contact</span></a>
       <a href="#"><span>Évènements passés</span></a>
-      <a href="javascript:void(0);" class="icon" onclick="editNav()">
-        <i class="fa fa-bars"></i>
-      </a>
+      </div>
     </div>
   </div>
   </div>
@@ -80,7 +81,7 @@
             </div>
             <div class="formData">
               <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
-              <input type="number" class="text-control" id="quantity" name="quantity" >
+              <input type="number" class="text-control" id="quantity" name="quantity" min="0">
               <span class="error" id="errorequantity"></span>
             </div>
             <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
@@ -109,7 +110,7 @@
               <label class="checkbox-label" for="location6">
                 <span class="checkbox-icon"></span>
                 Portland</label>
-                <span class="error" id="errorlocal"></span>
+                <br><span class="error" id="errorlocal"></span>
             </div>
             
             <div class="formData">
@@ -119,7 +120,7 @@
                 J'ai lu et accepté les conditions d'utilisation.
                 
               </label>
-             <span class="error" id="errorchek"></span>
+             <br><span class="error" id="errorchek"></span>
             
               <input class="checkbox-input" type="checkbox" id="checkbox2" />
               <label class="checkbox2-label" for="checkbox2">
